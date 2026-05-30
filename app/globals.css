@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #070B14;
+  --color-secondary: #0F172A;
+  --color-glass: rgba(255, 255, 255, 0.06);
+  --color-border-glow: rgba(255, 255, 255, 0.08);
+  --color-primary-blue: #3B82F6;
+  --color-primary-purple: #8B5CF6;
+  --color-primary-cyan: #06B6D4;
+}
+
+body {
+  background-color: var(--color-background);
+  color: #FFFFFF;
+}
+
+@layer utilities {
+  .glass-panel {
+    background: var(--color-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--color-border-glow);
+  }
+}
